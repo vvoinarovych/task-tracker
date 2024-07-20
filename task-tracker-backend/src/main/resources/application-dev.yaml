@@ -17,7 +17,7 @@ spring:
     init:
       mode: always
       continue-on-error: false
-#      data-locations: classpath:data.sql
+#      data-locations: classpath:demo-data.sql
 
 task-tracker:
   app:
