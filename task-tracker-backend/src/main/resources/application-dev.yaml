@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/task_tracker?currentSchema=task_tracker
+    username: username
+    password: password
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      mode: always
+      continue-on-error: false
+#      data-locations: classpath:data.sql
+
+task-tracker:
+  app:
+    jwtSecret: 322491edabb73ee883322ad748386426536f58e5e1dfcf0dc62d9a8e72677a59
+    jwtExpirationMs: 86400000
+

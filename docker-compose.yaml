@@ -6,16 +6,16 @@ services:
       POSTGRES_USER: username
       POSTGRES_PASSWORD: password
       PGDATA: /var/lib/postgresql/data
-      POSTGRES_DB: task-tracker
+      POSTGRES_DB: task_tracker
     volumes:
       - postgres:/data/postgres
     ports:
       - 5432:5432
     networks:
-      - spring-demo
+      - tt-network
     restart: unless-stopped
 networks:
-  spring-demo:
+  tt-network:
     driver: bridge
 
 volumes:
