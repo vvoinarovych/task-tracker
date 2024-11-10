@@ -1,9 +1,9 @@
 import './App.css'
+import LoginPage from "./pages/LoginPage.tsx";
 
 function App() {
-
     return (
-        <div>Hello world</div>
+        <LoginPage></LoginPage>
     )
 }
 
