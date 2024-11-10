@@ -1,9 +1,9 @@
 package com.vvoinarovych.tasktrackerbackend.security.controller;
 
-import com.vvoinarovych.tasktrackerbackend.dto.JwtResponse;
-import com.vvoinarovych.tasktrackerbackend.dto.LoginRequest;
-import com.vvoinarovych.tasktrackerbackend.dto.MessageResponse;
-import com.vvoinarovych.tasktrackerbackend.dto.SignupRequest;
+import com.vvoinarovych.tasktrackerbackend.security.dto.JwtResponse;
+import com.vvoinarovych.tasktrackerbackend.security.dto.LoginRequest;
+import com.vvoinarovych.tasktrackerbackend.security.dto.MessageResponse;
+import com.vvoinarovych.tasktrackerbackend.security.dto.SignupRequest;
 import com.vvoinarovych.tasktrackerbackend.security.services.AuthService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;

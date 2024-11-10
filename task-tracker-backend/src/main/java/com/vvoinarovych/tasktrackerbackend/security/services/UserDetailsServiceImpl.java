@@ -1,7 +1,7 @@
 package com.vvoinarovych.tasktrackerbackend.security.services;
 
-import com.vvoinarovych.tasktrackerbackend.model.User;
-import com.vvoinarovych.tasktrackerbackend.repository.UserRepository;
+import com.vvoinarovych.tasktrackerbackend.security.model.User;
+import com.vvoinarovych.tasktrackerbackend.security.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;

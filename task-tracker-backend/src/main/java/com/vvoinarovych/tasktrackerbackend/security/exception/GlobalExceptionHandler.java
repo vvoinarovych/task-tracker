@@ -1,6 +1,6 @@
-package com.vvoinarovych.tasktrackerbackend.exception;
+package com.vvoinarovych.tasktrackerbackend.security.exception;
 
-import com.vvoinarovych.tasktrackerbackend.dto.ExceptionResponse;
+import com.vvoinarovych.tasktrackerbackend.security.dto.ExceptionResponse;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;

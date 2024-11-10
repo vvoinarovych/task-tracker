@@ -1,4 +1,4 @@
-package com.vvoinarovych.tasktrackerbackend.dto;
+package com.vvoinarovych.tasktrackerbackend.security.dto;
 
 import java.util.List;
 

@@ -1,6 +1,6 @@
-package com.vvoinarovych.tasktrackerbackend.repository;
+package com.vvoinarovych.tasktrackerbackend.security.repository;
 
-import com.vvoinarovych.tasktrackerbackend.model.User;
+import com.vvoinarovych.tasktrackerbackend.security.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

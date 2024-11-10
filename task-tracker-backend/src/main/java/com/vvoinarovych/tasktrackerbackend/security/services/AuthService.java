@@ -1,14 +1,14 @@
 package com.vvoinarovych.tasktrackerbackend.security.services;
 
-import com.vvoinarovych.tasktrackerbackend.dto.JwtResponse;
-import com.vvoinarovych.tasktrackerbackend.dto.LoginRequest;
-import com.vvoinarovych.tasktrackerbackend.dto.SignupRequest;
-import com.vvoinarovych.tasktrackerbackend.exception.UserExistsException;
-import com.vvoinarovych.tasktrackerbackend.model.ERole;
-import com.vvoinarovych.tasktrackerbackend.model.Role;
-import com.vvoinarovych.tasktrackerbackend.model.User;
-import com.vvoinarovych.tasktrackerbackend.repository.RoleRepository;
-import com.vvoinarovych.tasktrackerbackend.repository.UserRepository;
+import com.vvoinarovych.tasktrackerbackend.security.dto.JwtResponse;
+import com.vvoinarovych.tasktrackerbackend.security.dto.LoginRequest;
+import com.vvoinarovych.tasktrackerbackend.security.dto.SignupRequest;
+import com.vvoinarovych.tasktrackerbackend.security.exception.UserExistsException;
+import com.vvoinarovych.tasktrackerbackend.security.model.ERole;
+import com.vvoinarovych.tasktrackerbackend.security.model.Role;
+import com.vvoinarovych.tasktrackerbackend.security.model.User;
+import com.vvoinarovych.tasktrackerbackend.security.repository.RoleRepository;
+import com.vvoinarovych.tasktrackerbackend.security.repository.UserRepository;
 import com.vvoinarovych.tasktrackerbackend.security.jwt.JwtUtils;
 import lombok.AllArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;

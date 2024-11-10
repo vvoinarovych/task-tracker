@@ -1,7 +1,7 @@
 package com.vvoinarovych.tasktrackerbackend.security.services;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.vvoinarovych.tasktrackerbackend.model.User;
+import com.vvoinarovych.tasktrackerbackend.security.model.User;
 import lombok.Getter;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;

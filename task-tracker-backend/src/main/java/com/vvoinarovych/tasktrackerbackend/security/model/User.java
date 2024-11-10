@@ -1,4 +1,4 @@
-package com.vvoinarovych.tasktrackerbackend.model;
+package com.vvoinarovych.tasktrackerbackend.security.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
