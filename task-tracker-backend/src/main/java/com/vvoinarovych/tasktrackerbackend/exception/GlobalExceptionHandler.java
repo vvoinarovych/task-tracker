@@ -14,9 +14,6 @@ public class GlobalExceptionHandler {
     public ResponseEntity<ExceptionResponse> handleException(UserExistsException exp) {
         return ResponseEntity
                 .status(CONFLICT)
-                .body(ExceptionResponse.builder()
-                        .error(exp.getMessage())
-                        .build()
-                );
+                .body(new ExceptionResponse(exp.getMessage()));
     }
 }

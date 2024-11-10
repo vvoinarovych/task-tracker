@@ -45,7 +45,7 @@ public class AuthService {
 
     public JwtResponse authenticateUser(LoginRequest loginRequest) {
         Authentication authentication = authenticationManager.authenticate(
-                new UsernamePasswordAuthenticationToken(loginRequest.getUsername(), loginRequest.getPassword()));
+                new UsernamePasswordAuthenticationToken(loginRequest.username(), loginRequest.password()));
         SecurityContextHolder.getContext().setAuthentication(authentication);
         String jwt = jwtUtils.generateJwtToken(authentication);
 
@@ -61,20 +61,20 @@ public class AuthService {
     }
 
     private boolean existsByUsername(SignupRequest signupRequest) {
-        return userRepository.existsByUsername(signupRequest.getUsername());
+        return userRepository.existsByUsername(signupRequest.username());
     }
 
     private boolean existsByEmail(SignupRequest signupRequest) {
-        return userRepository.existsByEmail(signupRequest.getEmail());
+        return userRepository.existsByEmail(signupRequest.email());
     }
 
     private void createUser(SignupRequest signupRequest) {
 
-        User user = new User(signupRequest.getUsername(),
-                signupRequest.getEmail(),
-                encoder.encode(signupRequest.getPassword()));
+        User user = new User(signupRequest.username(),
+                signupRequest.email(),
+                encoder.encode(signupRequest.password()));
 
-        Set<String> strRoles = signupRequest.getRoles();
+        Set<String> strRoles = signupRequest.roles();
         Set<Role> roles = new HashSet<>();
 
         if (strRoles == null) {

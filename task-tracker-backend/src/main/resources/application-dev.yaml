@@ -23,4 +23,5 @@ task-tracker:
   app:
     jwtSecret: 322491edabb73ee883322ad748386426536f58e5e1dfcf0dc62d9a8e72677a59
     jwtExpirationMs: 86400000
-
+server:
+  port: 6666
